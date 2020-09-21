@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "TD2", "TD2\TD2.modelproj", "{07802F44-01C9-40CA-9547-ABD4197E4899}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TD2Lib", "TD2Lib\TD2Lib.csproj", "{82948EFD-A1C1-4D22-850C-40366008B963}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07802F44-01C9-40CA-9547-ABD4197E4899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07802F44-01C9-40CA-9547-ABD4197E4899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07802F44-01C9-40CA-9547-ABD4197E4899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07802F44-01C9-40CA-9547-ABD4197E4899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82948EFD-A1C1-4D22-850C-40366008B963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82948EFD-A1C1-4D22-850C-40366008B963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82948EFD-A1C1-4D22-850C-40366008B963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82948EFD-A1C1-4D22-850C-40366008B963}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

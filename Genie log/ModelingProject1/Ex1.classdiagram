@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dab90951-0d54-4d45-8195-0bc7c3f27893" name="Ex1" linkedPackageId="f9db2511-4e67-4c09-9faa-c4d29ce1f8de" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="7107ed7e-bde9-4444-bfec-170cd2cda472">
+      <profileInstance Id="f028a3f4-7883-48f0-84ac-da8b5bf71d0b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ee179d5d-adcc-4912-a7b9-73b250f6d1b8">
+      <profileInstance Id="83d4686b-40de-4d77-a271-3d5f50e38422" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7f692022-d540-431a-97a5-a485295f8ef3" name="Voiture" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b2dec85-2032-41e3-8f41-7ea60f307625" />
+        <targetEnds>
+          <association Id="a515c2d5-b22c-4dc1-8f38-30bd08cb9bdf" isDerived="false" sourceEndRoleName="Voiture" targetEndRoleName="Consommation" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b4c067d3-4706-460b-a6b0-7c36ed977915" LastKnownName="Consommation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c94feba5-4558-4846-bd48-d17084a3c878" name="Voiture" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1e46f2f7-0819-42a6-840f-43278a09659b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2637cbd3-b739-4a6b-975e-8395b570f6ed" name="Consommation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="50120db3-32cf-486b-8057-ceb598d40709" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b98df59b-8c1e-4520-9185-7c7913970f8c" />
+          </association>
+          <association Id="55eebf16-65c0-4b80-9ead-90bcd18d3de9" isDerived="false" sourceEndRoleName="Voiture" targetEndRoleName="Compteur" isLeaf="false" isAbstract="false">
+            <classMoniker Id="72f1ad1f-4525-4d73-998b-a31e379e7397" LastKnownName="Compteur" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="063b59a5-a04c-407e-88d6-d77d92a56b77" name="Voiture" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="80262910-d85a-4b6c-a7c7-7b7f2faab779" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="437300b2-ceb2-49dd-a6e7-4b4b839fb2ac" name="Compteur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="54cd3fd7-d77c-494a-951b-2a6208055b56" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8f3ab9d5-b263-4bd3-8262-910e0c62fdde" />
+          </association>
+          <association Id="e140d741-d636-4bd6-abe9-9728d8eaf716" isDerived="false" sourceEndRoleName="Voiture" targetEndRoleName="ReservoirEssence" isLeaf="false" isAbstract="false">
+            <classMoniker Id="548050ac-f09c-4030-be98-ee3d92f9469c" LastKnownName="ReservoirEssence" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd7df241-7859-443b-b353-b43a705a79ff" name="Voiture" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1fa41a49-d611-4c3d-a99e-e2d5ace9ac70" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba3dc4b0-62d9-4ddd-9246-5558b94fe019" name="ReservoirEssence" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c02bec59-465b-4aad-bdf8-0b8c5fdb5af2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d4c8b1a3-e9f2-4ee8-99e6-766897bbdc9f" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="b8aacf42-d499-4d0b-abe9-24fdc04eec9a" name="numImmatriculation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9c0b45a7-76c6-4fe1-9a79-c65ce8b713ef" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3d9726d4-2dc1-4def-a36f-8d86e6693534" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="2e822352-b9d3-4414-bfd4-35adef1cbca2" name="nbChevaux" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4f7275ac-d74d-48ce-9929-3fd4abfde6f6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3d9726d4-2dc1-4def-a36f-8d86e6693534" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="3d9726d4-2dc1-4def-a36f-8d86e6693534" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="51f705cf-81b6-4b96-be32-052e24b8a96e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="548050ac-f09c-4030-be98-ee3d92f9469c" name="ReservoirEssence" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="895ef0ba-57db-4a2b-9acb-25288ee858e2" />
+        <ownedAttributesInternal>
+          <property Id="0a28126c-6df8-495d-82a9-e7f383a3fdd3" name="capacite" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="63fb2582-11d2-44d4-957c-88e2d5b60065" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c0a0aab0-5908-4f1d-ad0b-e7143be74f96" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="b136c997-b6d9-4b14-8a45-c7ae98ffb601" name="contenu" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8427c9da-7d8c-4244-8c62-ace083634f41" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c0a0aab0-5908-4f1d-ad0b-e7143be74f96" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c0a0aab0-5908-4f1d-ad0b-e7143be74f96" name="double" isAbstract="false" isLeaf="false" cachedFullName="double">
+        <elementDefinition Id="ea548c30-bffe-46b5-b8ef-0fbb1ae61c4d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="72f1ad1f-4525-4d73-998b-a31e379e7397" name="Compteur" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b83dfdfa-efbf-4cbe-af82-19424acd37e2" />
+        <ownedAttributesInternal>
+          <property Id="a1f7ddc6-56fd-4e3c-9c6a-b592f90e1e8b" name="vitesse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5690ff10-259c-4902-9a3b-e1b0dabf01d3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c0a0aab0-5908-4f1d-ad0b-e7143be74f96" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="79d40be1-c126-416a-b1f3-73c673df5451" name="kilometrage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="82b7367d-949c-4d36-8978-185a800c878a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c0a0aab0-5908-4f1d-ad0b-e7143be74f96" LastKnownName="double" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="be48e482-6ecb-4fff-a1f3-87cb8809d6bc" name="DefaultValue" value="0">
+                <elementDefinition Id="f3c53a2e-91ce-434b-8b9d-53ec6399188c" />
+              </literalString>
+            </defaultValue>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b4c067d3-4706-460b-a6b0-7c36ed977915" name="Consommation" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4423295f-ee3d-4038-955d-69cc548948e5" />
+        <targetEnds>
+          <association Id="67d3c688-cb8c-41e8-bf59-d6e266cdb1a1" isDerived="false" sourceEndRoleName="Consommation" targetEndRoleName="Compteur" isLeaf="false" isAbstract="false">
+            <classMoniker Id="72f1ad1f-4525-4d73-998b-a31e379e7397" LastKnownName="Compteur" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93f1e4de-6a35-47e4-8cd7-9654db155a4c" name="Consommation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="32adf491-dac2-47d0-8304-7c003621766d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da9f003c-c2df-426d-86c1-b0332283146b" name="Compteur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="50ffe47f-caaf-4bc1-94b1-3339e31f647e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4be2237b-56f7-4099-a207-ea96faff8030" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bcbd11dd-f24d-4d2c-a553-186e253f03a9" name="Voyage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c945bdf5-15de-45b4-830f-d5e1c37d7244" />
+        <targetEnds>
+          <association Id="84a79e94-639f-4abb-a95d-f5490eba21ce" isDerived="false" sourceEndRoleName="Voyage" targetEndRoleName="Voiture" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7f692022-d540-431a-97a5-a485295f8ef3" LastKnownName="Voiture" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8da9c60-ad74-46ff-a2e7-963085a69e57" name="Voyage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5100a77c-5fd3-486d-b0e8-a379dc87d169" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9969d087-9598-4113-9fb8-d4198b863dd0" name="Voiture" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fccafd7b-45ff-4e55-9616-47e85572d690" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3c670842-d2ae-4b3b-9216-b0d2d56781fe" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="d4c75206-f526-43de-ac53-db5a686d2020" name="cout" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="22cddb7a-fcb0-46ca-ad7e-06864e9dba31" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c0a0aab0-5908-4f1d-ad0b-e7143be74f96" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="bbe7c2d1-8a5b-4c1a-b4f1-5c19d4d1fc40" name="longueur" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a0580382-681f-40ae-bc51-12e11480fe2e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3d9726d4-2dc1-4def-a36f-8d86e6693534" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="f9db2511-4e67-4c09-9faa-c4d29ce1f8de" name="ModelingProject1">
+    <elementDefinition Id="df7aa901-8457-47fc-adac-0f274a6329ee" />
+  </package>
+</logicalClassDesignerModel>

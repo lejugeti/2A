@@ -1,0 +1,6 @@
+H:\2A\Genie log\TP1\ex6\bin\Debug\ex6.exe.config
+H:\2A\Genie log\TP1\ex6\bin\Debug\ex6.exe
+H:\2A\Genie log\TP1\ex6\bin\Debug\ex6.pdb
+H:\2A\Genie log\TP1\ex6\obj\Debug\ex6.csprojResolveAssemblyReference.cache
+H:\2A\Genie log\TP1\ex6\obj\Debug\ex6.exe
+H:\2A\Genie log\TP1\ex6\obj\Debug\ex6.pdb
