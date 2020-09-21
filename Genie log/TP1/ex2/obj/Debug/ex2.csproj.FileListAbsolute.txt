@@ -1,0 +1,6 @@
+H:\2A\Genie log\TP1\ex2\bin\Debug\ex2.exe.config
+H:\2A\Genie log\TP1\ex2\bin\Debug\ex2.exe
+H:\2A\Genie log\TP1\ex2\bin\Debug\ex2.pdb
+H:\2A\Genie log\TP1\ex2\obj\Debug\ex2.exe
+H:\2A\Genie log\TP1\ex2\obj\Debug\ex2.pdb
+H:\2A\Genie log\TP1\ex2\obj\Debug\ex2.csprojResolveAssemblyReference.cache
