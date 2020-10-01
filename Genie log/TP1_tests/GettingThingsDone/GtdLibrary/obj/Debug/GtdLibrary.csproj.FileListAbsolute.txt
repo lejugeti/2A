@@ -1,0 +1,6 @@
+E:\Cours\ensc\2A\Genie log\TP1_tests\GettingThingsDone\GtdLibrary\bin\Debug\GtdLibrary.exe.config
+E:\Cours\ensc\2A\Genie log\TP1_tests\GettingThingsDone\GtdLibrary\bin\Debug\GtdLibrary.exe
+E:\Cours\ensc\2A\Genie log\TP1_tests\GettingThingsDone\GtdLibrary\bin\Debug\GtdLibrary.pdb
+E:\Cours\ensc\2A\Genie log\TP1_tests\GettingThingsDone\GtdLibrary\obj\Debug\GtdLibrary.csprojAssemblyReference.cache
+E:\Cours\ensc\2A\Genie log\TP1_tests\GettingThingsDone\GtdLibrary\obj\Debug\GtdLibrary.exe
+E:\Cours\ensc\2A\Genie log\TP1_tests\GettingThingsDone\GtdLibrary\obj\Debug\GtdLibrary.pdb
