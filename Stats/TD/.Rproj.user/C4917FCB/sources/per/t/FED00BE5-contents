@@ -15,34 +15,34 @@ res = lm(y~x)
 summary(res)
 abline(res, col="red")
 
-#On regarde la distribution des résidus pour voir s'il y a normalité
+#On regarde la distribution des r?sidus pour voir s'il y a normalit?
 hist(res$residuals)
 
 
-# Graphs utiles pour juger de la qualité du modèle ------------------------
+# Graphs utiles pour juger de la qualit? du mod?le ------------------------
 
 par(mfrow=c(1,2))
 
-#on regarde les résidus en fonction des valeurs prédites
+#on regarde les r?sidus en fonction des valeurs pr?dites
 plot(res$fitted.values, res$residuals)
 abline(h=0, col=2)
 
-#comparaison des valeurs réelles avec celles prédites
+#comparaison des valeurs r?elles avec celles pr?dites
 plot(res$fitted, y)
 abline(0,1,col=2)
 
-#étude des résidus studentisés
+#?tude des r?sidus studentis?s
 par(mfrow=c(1,1))
 residus_stud = rstudent(res)
 plot(residus_stud, ylab="res. student", ylim=c(-3.5, 3.5))
 abline(h=c(-2,0,2), lty=c(2,1,2))
 
 
-# prédiction avec le modèle -----------------------------------------------
+# pr?diction avec le mod?le -----------------------------------------------
 
 res = lm(y~x)
 x0 = data.frame(x=2)
 predict(res, new=x0, interval="pred", level=0.95)#estimation yo
-predict(res, new=x0, interl="conf", level=0.95)#estimation de E[y sachant x0], avec E l'espérance
+predict(res, new=x0, interl="conf", level=0.95)#estimation de E[y sachant x0], avec E l'esp?rance
 
 
