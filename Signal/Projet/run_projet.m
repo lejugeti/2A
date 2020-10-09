@@ -20,4 +20,4 @@ G1 = G1 .* (1-keyBleu);
 B1 = B1 .* (1-keyBleu);
 newImg = cat(3, R1, G1, B1);
 
-%imshow(newImg);
+imshow(newImg);
