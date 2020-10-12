@@ -4,6 +4,7 @@ import re
 import os
 
 path = "E:/Cours/ensc/2A/BDF/"
+#path = "../BDF/"
 rep = pd.read_excel(path + "rep.xlsx")
 
 rep.drop(columns="Horodateur", inplace=True)
@@ -35,8 +36,8 @@ print(rep)
 
 #%% join des tableaux
 
-liste1A = pd.read_excel("E:/Cours/ensc/2A/BDF/1A.xlsx")
-
+#liste1A = pd.read_excel("E:/Cours/ensc/2A/BDF/1A.xlsx")
+liste1A = pd.read_excel("../BDF/1A.xlsx")
 finalListe = pd.merge(liste1A, rep, on="nom_2A")
 finalListe.to_excel(path + "liste_merged.xlsx")
 print(finalListe)
