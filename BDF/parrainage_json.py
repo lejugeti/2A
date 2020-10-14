@@ -21,13 +21,13 @@ p[p=="Oui monsieur"] = "oui"
 rep["participe"] = p
 
 #on check les numéros de tel
-patternNum = "^0[6-7][0-9]{8}$"
+"""patternNum = "^0[6-7][0-9]{8}$"
 
 for i in range(len(rep)):
     testNum = re.match(patternNum, rep["contact"][i])
 
     if(not testNum):
-        rep["contact"][i] = "aucun" 
+        rep["contact"][i] = "aucun" """
 
 #rep.contact = rep.contact.astype(str)
 #rep.to_json(path + "rep.json", orient="index")
@@ -44,6 +44,7 @@ print(finalListe)
 
 #%% ajout des paths photos
 
+path = "E:\\Cours\\ensc\\2A\\BDF\\"
 df = pd.read_excel(os.path.join(path, "liste_merged.xlsx"))
 photos = os.listdir(os.path.join(path, "photos"))
 
