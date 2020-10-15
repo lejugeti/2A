@@ -2,7 +2,7 @@ clear all
 close all
 clc
 
-img = imread('../images/home.jpg');
+img = imread('./img/home.jpg');
 img_ycbcr = rgb2ycbcr(uint8(img));
 
 C = edge(img_ycbcr(:,:,1)); 
