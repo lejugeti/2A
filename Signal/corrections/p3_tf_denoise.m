@@ -1,6 +1,6 @@
 clear all, close all, clc
 
-A = imread('../img/pise_ext.bmp');
+A = imread('../images/pise_ext.bmp');
 
 sigma=2.0;
 fx=0.25;
