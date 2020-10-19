@@ -40,3 +40,10 @@ summary(res)
 #on le voit en regardant le R² car il augmente ou diminue
 res = lm(y~x2+x3+x4+x5, data=matXY)
 summary(res)
+
+
+# suppression d'une variable explicative avec le critère AIC --------------
+
+y = 4 - 2*x1 + 3 * x2 - 5*x3 + 0.8*x4 + 1.4*x5 + e
+matXY = data.frame(y, x1, x2, x3, x4, x5)
+res = lm(y~x1+x2+x3+x4+x5, data=matXY)
