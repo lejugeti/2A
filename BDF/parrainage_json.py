@@ -3,8 +3,8 @@ import pandas as pd
 import re 
 import os
 
-path = "E:/Cours/ensc/2A/BDF/"
-#path = "../BDF/"
+#path = "E:/Cours/ensc/2A/BDF/"
+path = "../BDF/"
 rep = pd.read_excel(path + "rep.xlsx")
 
 rep.drop(columns="Horodateur", inplace=True)
@@ -44,34 +44,29 @@ print(finalListe)
 
 #%% ajout des paths photos
 
-path = "E:\\Cours\\ensc\\2A\\BDF\\"
+path = ".\\"
 df = pd.read_excel(os.path.join(path, "liste_merged.xlsx"))
 photos = os.listdir(os.path.join(path, "photos"))
 
 for line in df.iterrows():
     lineData = line[1] #pour accéder aux données du Series
+    pattern = f"^{lineData.nom_2A.lower()}_"
+    #tempNom = lineData.nom_2A.lower()
+    #tempPrenom = lineData.prenom_2A.lower()
     
-    changementPath = False
-    tempNom = lineData.nom_2A.lower()
-    tempPrenom = lineData.prenom_2A.lower()
-    patternPhoto = f"{tempNom}"
-
-    for p in photos:
-        pName, pExt = os.path.splitext(p)
-        pName = pName.lower()
-        match = re.search(patternPhoto, pName)
+    for p in os.listdir(".\\photos\\"):
+        nomFile, extFile = os.path.splitext(p)
+        match = re.search(pattern, p)
         
         if(match):
-            newPath = os.path.join(path, "photos", f"{tempNom}_{tempPrenom}{pExt}")
-            os.rename(os.path.join(path, "photos", p), newPath)
-            df.path[line[0]] = os.path.join(f"./photos/{tempNom}_{tempPrenom}{pExt}")
-            changementPath = True
-    
-    #on enlève le path google drive s'il n'y a pas de photo fournie
-    if(not changementPath): 
-        df.path[line[0]] = "null"
+            
+            newPath = f"./img/{nomFile}{extFile}"
+            df.path[line[0]] = newPath
     
 #%% écriture du tableau final
 
-df.to_excel(os.path.join(path, "liste_merged.xlsx"))
+#   df.to_excel(os.path.join(path, "liste_merged.xlsx"))
+df = pd.read_excel("./liste_merged.xlsx")
 df.to_json(os.path.join(path, "liste_parrainage.json"), orient="index")
+
+#%%
