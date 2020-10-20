@@ -2,10 +2,14 @@ load(file="./data/appartements.Rda")
 apt = appartements
 x = apt$surface
 y = apt$prix
-plot(apt$surface, apt$prix)
+plot(x, y)
+abline(res, col="red")
 
-res = lm(apt$prix~x)
+res = lm(y~x)
 summary(res)
+
+plot(res$fitted, res$residuals)
+abline(h=0, col="red")
 
 #test de normalité des résidus
 shapiro.test(res$residuals)

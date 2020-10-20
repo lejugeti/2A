@@ -10,7 +10,7 @@ colnames(nt) = "nt"
 
 reg1 = lm(nt$nt~t)
 
-par(mfrow=c(2,1))
+par(mfrow=c(1,1))
 plot(bacteries$t, bacteries$nt)
 abline(reg1$coefficients[1], reg1$coefficients[2], col='red')
 
