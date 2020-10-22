@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29519.181
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtdLibrary", "GtdLibrary\GtdLibrary.csproj", "{48804077-70C1-4334-94F7-AA5DB101D892}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtdConsole", "GtdConsole\GtdConsole.csproj", "{F0E69500-1CEB-4472-ADDC-FB4957EF9F51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtdLibraryTests", "GtdLibraryTests\GtdLibraryTests.csproj", "{F23ABF74-FB69-41F5-A2D2-5093F579E771}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F0E69500-1CEB-4472-ADDC-FB4957EF9F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0E69500-1CEB-4472-ADDC-FB4957EF9F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0E69500-1CEB-4472-ADDC-FB4957EF9F51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23ABF74-FB69-41F5-A2D2-5093F579E771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23ABF74-FB69-41F5-A2D2-5093F579E771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23ABF74-FB69-41F5-A2D2-5093F579E771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23ABF74-FB69-41F5-A2D2-5093F579E771}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
