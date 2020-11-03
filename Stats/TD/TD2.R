@@ -47,3 +47,40 @@ summary(res)
 y = 4 - 2*x1 + 3 * x2 - 5*x3 + 0.8*x4 + 1.4*x5 + e
 matXY = data.frame(y, x1, x2, x3, x4, x5)
 res = lm(y~x1+x2+x3+x4+x5, data=matXY)
+
+
+# ajout / retrait de variables du modèle ----------------------------------
+
+n = 100
+x1 = runif(n, min=-5, max=5)
+x2 = runif(n, min=-5, max=5)
+x3 = runif(n, min=-5, max=5)
+x4 = runif(n, min=-5, max=5)
+x5 = runif(n, min=-5, max=5)
+sigma=2
+e = rnorm(n, 0, sigma)
+
+y = 4 - 2*x1 + 3 * x2 - 5*x3 + 0.8*x4 + 1.4*x5 + e
+matXY = data.frame(y, x1, x2, x3, x4, x5)
+res = lm(y~x1+x2+x3+x4+x5, data=matXY)
+
+# <none> est la ligne pour le modèle de base. Toutes les autres lignes sont pour 
+# les modèles privés de la variable de la ligne.
+# + critère AIC bas mieux c'est donc si sur une ligne on a un AIC haut alors il ne faut pas 
+# supprimer cette variable du modèle
+drop1(res)
+
+res2 = lm(y~x1+x2, data=matXY)
+add1(res2, ~x1+x2+x3+x4+x5) #on propose toute une liste qui peut rentrer dans le modèle
+
+# parfois il peut être intéressant de rajouter une variable puis une autre pour obtenir le meilleur modèle possible
+# donc travailler pas à pas est fondamental 
+
+
+# sélection automatique avec step -----------------------------------------
+
+# la fonction cherche pas à pas quelle est la meilleure variable à ajouter au modèle
+# les variables sont classées en fonction du critère AIC en ascendant
+# On nous passe à titre informatif la commande pour obtenir le meilleur modèle + les coefficients du modèle
+res = lm(y~x3, data=matXY)
+step(res, ~x1+x2+x3+x4+x5)
