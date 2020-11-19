@@ -17,7 +17,8 @@ namespace GL_WinForms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             /*Application.Run(new Form1());*/
-            Application.Run(new Calculatrice());
+            /*Application.Run(new Calculatrice());*/
+            Application.Run(new MainForm());
         }
     }
 }
