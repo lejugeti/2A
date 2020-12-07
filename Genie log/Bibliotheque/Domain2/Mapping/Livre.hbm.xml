@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Domain"
+                   namespace="Domain">
+
+	<class name="Livre" table="livre">
+		<id name="Id" column="livre_id" type="int">
+			<generator class="native"></generator>
+		</id>
+		<property name="Auteur" column="livre_auteur" not-null="true"/>
+		<property name="ISBN" column="livre_isbn" not-null="true"/>
+		<property name="Titre" column="livre_titre" not-null="false"/>
+		
+	</class>
+
+</hibernate-mapping>

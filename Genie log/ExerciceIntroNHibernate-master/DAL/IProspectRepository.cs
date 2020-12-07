@@ -10,7 +10,7 @@ namespace DAL
     public interface IProspectRepository
     {
         /// <summary>
-        /// Retuen all prospects
+        /// Return all prospects
         /// </summary>
         /// <returns></returns>
         List<Prospect> GetAll();
