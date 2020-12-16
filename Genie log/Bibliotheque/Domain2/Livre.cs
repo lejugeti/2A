@@ -11,6 +11,11 @@ namespace Domain
         public virtual string ISBN { get; set; }
         public virtual string Titre { get; set; }
 
+        public Livre()
+        {
+
+        }
+
         public Livre(string auteur, int id, string isbn, string titre)
         {
             Auteur = auteur;
@@ -19,7 +24,7 @@ namespace Domain
             Titre = titre;
         }
 
-        public string Decrire()
+        public virtual string Decrire()
         {
             return $"{Titre}";
         }

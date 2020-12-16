@@ -12,6 +12,11 @@ namespace Domain
         public virtual string Nom { get; set; }
         public virtual string Prenom { get; set; }
 
+        public Utilisateur()
+        {
+
+        }
+
         public Utilisateur(int id, string nom, string prenom)
         {
             Id = id;
@@ -19,7 +24,7 @@ namespace Domain
             Prenom = prenom;
         }
 
-        public string Decrire()
+        public virtual string Decrire()
         {
             return $"{Id} : {Nom} {Prenom}";
         }

@@ -6,6 +6,7 @@ namespace Domain
 {
     public class Emprunt
     {
+        public virtual int Id { get; set; }
         public virtual DateTime Date { get; set; }
         public virtual Utilisateur Emprunteur { get; set; }
         public virtual Livre Livre { get; set; }

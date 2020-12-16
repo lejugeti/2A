@@ -69,9 +69,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAL2\DAL2.csproj">
+    <ProjectReference Include="..\DAL2\DAL.csproj">
       <Project>{817e33b2-59df-4f44-ae8a-26be1dda3f6f}</Project>
-      <Name>DAL2</Name>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain2\Domain2.csproj">
       <Project>{e146bdaf-a79d-4289-906b-f0c28b9226f9}</Project>

@@ -5,7 +5,7 @@ using Domain;
 
 namespace DAL
 {
-    interface ILivreRepository
+    public interface ILivreRepository
     {
         List<Livre> GetAll();
         void Save(Livre livre);

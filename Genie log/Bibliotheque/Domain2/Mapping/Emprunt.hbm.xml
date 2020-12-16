@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Domain"
+                   namespace="Domain">
+
+	<class name="Emprunt" table="emprunt">
+		<id name="Id" column="emprunt_id" type="int">
+			<generator class="native"></generator>
+		</id>
+		<property name="Date" column="emprunt_date" type="date" not-null="true"/>
+		<property name="Rendu" column="emprunt_rendu" type="boolean" not-null="true"/>
+		<many-to-one name="Emprunteur" class="Utilisateur" column="emprunt_id_util"  not-null="true"/>
+		<many-to-one name="Livre" class="Livre" column="emprunt_id_livre"  not-null="true"/>
+	</class>
+
+</hibernate-mapping>

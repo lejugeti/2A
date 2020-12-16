@@ -5,7 +5,7 @@ using Domain;
 
 namespace DAL
 {
-    interface IUtilisateurRepository
+    public interface IUtilisateurRepository
     {
         List<Utilisateur> GetAll();
         void Save(Utilisateur utilisateur);

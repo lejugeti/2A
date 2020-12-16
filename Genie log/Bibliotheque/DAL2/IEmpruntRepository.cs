@@ -5,7 +5,7 @@ using Domain;
 
 namespace DAL
 {
-    interface IEmpruntRepository
+    public interface IEmpruntRepository
     {
         List<Emprunt> GetAll();
         void Save(Emprunt emprunt);

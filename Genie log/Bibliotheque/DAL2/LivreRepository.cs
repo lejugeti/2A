@@ -6,7 +6,7 @@ using Domain;
 
 namespace DAL
 {
-    class LivreRepository : Repository, ILivreRepository
+    public class LivreRepository : Repository, ILivreRepository
     {
         public List<Livre> GetAll()
         {

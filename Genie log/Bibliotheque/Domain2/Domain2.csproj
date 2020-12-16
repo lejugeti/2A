@@ -50,5 +50,8 @@
     <EmbeddedResource Include="Mapping\Livre.hbm.xml" />
     <EmbeddedResource Include="Mapping\Utilisateur.hbm.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mapping\Emprunt.hbm.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

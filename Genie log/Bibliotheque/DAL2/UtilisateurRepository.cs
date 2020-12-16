@@ -6,7 +6,7 @@ using Domain;
 
 namespace DAL
 {
-    class UtilisateurRepository : Repository, IUtilisateurRepository
+    public class UtilisateurRepository : Repository, IUtilisateurRepository
     {
         public List<Utilisateur> GetAll()
         {
