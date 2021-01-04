@@ -1,6 +1,0 @@
-H:\2A\Genie log\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-H:\2A\Genie log\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-H:\2A\Genie log\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-H:\2A\Genie log\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
-H:\2A\Genie log\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-H:\2A\Genie log\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

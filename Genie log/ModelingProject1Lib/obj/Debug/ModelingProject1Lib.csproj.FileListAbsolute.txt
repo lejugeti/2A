@@ -1,5 +1,0 @@
-H:\2A\Genie log\ModelingProject1Lib\bin\Debug\ModelingProject1Lib.dll
-H:\2A\Genie log\ModelingProject1Lib\bin\Debug\ModelingProject1Lib.pdb
-H:\2A\Genie log\ModelingProject1Lib\obj\Debug\ModelingProject1Lib.csprojResolveAssemblyReference.cache
-H:\2A\Genie log\ModelingProject1Lib\obj\Debug\ModelingProject1Lib.dll
-H:\2A\Genie log\ModelingProject1Lib\obj\Debug\ModelingProject1Lib.pdb
